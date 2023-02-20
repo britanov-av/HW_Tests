@@ -33,23 +33,25 @@ public class TestPack extends Global {
 
         /*Test body*/
         page.checkOriginalWindow(); //
+
         /*New Tab actions*/
         page.openNewTab();
         page.switchToNew();
         page.checkContent("simple");
         page.closeActiveViewport();
+
         /*New Window actions*/
         page.openNewWindow();
         page.switchToNew();
         page.checkContent("simple");
         page.closeActiveViewport();
+
         /*New Window Message actions*/
-        /*
         page.openNewMessageWindow();
         page.switchToNew();
         page.checkContent("message");
         page.closeActiveViewport();
-        */
+
     }
 
     @Test
